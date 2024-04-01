@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Jost", sans-serif;
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  background-color: #000;
+}
+.search-container input{
+  border-radius: 5px;
+  height: 40px;
+  width:400px; 
+  padding-left: 10px;
+  outline: none;
+  border: 0px;
+  font-size: 20px;
+}
+.search-container button{
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 1px;
+  background-color: rgb(74, 48, 216);
+  color: #fff;
+  border: 1px solid rgb(74, 48, 216);
+  padding: 0px 30px;
+  cursor: pointer;
+  opacity: .9;
+  transition: 0.8s;
+}
+.search-container button:hover{
+opacity: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-container{
+  background-color: rgb(103, 194, 247);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 80vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.weather-location{
+  text-align: center;
+}
+.weather{
+
+
+}
+.weather-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.temperature{
+  display: flex;
+  flex-direction: column;
+}
+.temperature h2{
+  font-size: 80px;
+  margin: 0;
+}
+.temperature p{
+  font-size: 15px;
+  margin: 0px;
+}
+.weather-feature{
+  margin-left: 30px;
+}
+.weather-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.weather-image img{
+  width: 50%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
