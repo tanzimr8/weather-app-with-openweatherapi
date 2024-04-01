@@ -16,9 +16,7 @@ const Weather = ({weatherData}) => {
         <p className='date'>{getCurrentDate()}</p>
       </div>
       <div className="weather">
-      <div className="weather-image">
-        <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="" />
-      </div>
+      
       <div className="weather-info">
         <div className="temperature">
           <h2>{Math.floor(weatherData.main.temp - 273)}&deg;</h2>
@@ -30,8 +28,11 @@ const Weather = ({weatherData}) => {
           <p>Wind speed: {weatherData.wind.speed}KPH</p>
         </div>
       </div>
-      
+      <div className="weather-image">
+        <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="" />
       </div>
+      </div>
+      
     </div>
   )
 }
