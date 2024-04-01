@@ -22,17 +22,18 @@ const Weather = ({weatherData}) => {
           <h2>{Math.floor(weatherData.main.temp - 273)}&deg;</h2>
           <p>Real feel: {Math.floor(weatherData.main.feels_like - 273)}&deg;</p>
         </div>
-        <div className="weather-feature">
-          <p>Condition: {weatherData.weather[0].main}</p>
-          <p>Humidity: {weatherData.main.humidity}%</p>
-          <p>Wind speed: {weatherData.wind.speed}KPH</p>
-        </div>
-      </div>
-      <div className="weather-image">
+        <div className="weather-image">
         <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="" />
       </div>
+        
       </div>
       
+      </div>
+      <div className="weather-feature">
+          <p>Condition: <br></br>{weatherData.weather[0].main}</p>
+          <p>Humidity: <br></br>{weatherData.main.humidity}%</p>
+          <p>Wind speed:<br></br> {weatherData.wind.speed}KPH</p>
+        </div>
     </div>
   )
 }

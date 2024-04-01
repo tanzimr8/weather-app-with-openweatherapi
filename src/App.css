@@ -67,6 +67,8 @@ opacity: 1;
 .temperature p{
   font-size: 15px;
   margin: 0px;
+  text-align: center;
+  font-weight: 600;
 }
 .weather-feature{
   margin-left: 30px;
@@ -76,8 +78,11 @@ opacity: 1;
   justify-content: center;
   align-items: center;
 }
-
+.weather-feature{
+  display: flex;
+  gap: 1em;
+}
 .weather-image img{
-  width: 50%;
+  /* width: 50%; */
 
 }
