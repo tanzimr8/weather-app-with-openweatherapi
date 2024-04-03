@@ -158,85 +158,6 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 .weather-other-details span{
   color:var(--seconary);
 }
-/* .weather-container{
-  background-color: rgb(174, 222, 250);
-  display: flex;
-  flex-direction: column;
-  min-height: 80vh;
-  justify-content: center;
-  align-items: center;
-}
-.weather-location{
-  text-align: center;
-  margin-bottom: 10px;
-}
-.location{
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-
-}
-.date{
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-  margin-bottom: 10px;
-
-}
-.weather{
-
-
-}
-.weather-info{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.temperature{
-  display: flex;
-  flex-direction: column;
-}
-.temperature h2{
-  font-size: 60px;
-  margin: 0;
-  color:rgb(74, 48, 216);
-}
-.temperature p{
-  font-size: 15px;
-  margin: 0px;
-  text-align: center;
-  font-weight: 600;
-}
-.weather-image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.weather-feature{
-  display: flex;
-  gap: 2em;
-  justify-content: center;
-  align-items: center;
-}
-.weather-feature p{
-  font-size: 26px;
-  display: flex;
-  /* text-transform: uppercase; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.weather-feature span{
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.weather-image img{ */
-  /* width: 50%; */
-
-/* } */
 .error{
   /* width: 300px; */
   height: 80vh;
@@ -273,12 +194,27 @@ footer p a{
 font-size: 12px;
 letter-spacing: 1px!important;
 }
+
 @media only screen and (max-width: 600px) {
+  .search-container{
+    min-height: 10vh;
+  }
   .search-container input{
-    width:200px; 
-    padding-left: 20px;  
+    width:200px;
+    padding-left: 20px;
   }
   .search-container button{
     padding: 0px 15px;
+  }
+  .weather-location,.weather-info,.weather-other-details{
+    width: 200px;
+  }
+  
+  .weather-info{
+    flex-direction: column;
+    gap: 1em;
+  }
+  footer{
+    min-height: 10vh;
   }
 }
