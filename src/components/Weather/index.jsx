@@ -39,7 +39,7 @@ const WeatherApp = () => {
         }    
     }
     useEffect(()=>{
-        fetchWeatherData('Rajshahi');
+        fetchWeatherData("St. John's");
     },[])
     if(loading){
         return <Loading/>
