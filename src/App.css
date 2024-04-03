@@ -2,7 +2,12 @@
   --primary: #D3C5E5;
   --seconary:#735DA5; 
 }
-
+.loader{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   font-family: "Jost", sans-serif;
   margin: 0;
@@ -67,6 +72,7 @@ opacity: 1;
   gap: 1em;
   /* background-image: url('./images/bg.jpg'); */
   background-color: var(--primary);
+  padding: 0px 40px;
 
 }
 .weather-location{
@@ -120,13 +126,13 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 }
 .info-condition{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   text-align: left;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .info-condition .condition{
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing:2px;
   text-transform: capitalize;
 }
@@ -137,6 +143,8 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 .weather-other-details{
   display: flex;  
   gap: 2em;
+  align-items: center ;
+  justify-content: center;
   padding: 30px 60px;
   width: 400px;
   border-radius: 30px;
@@ -148,8 +156,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
   font-size: 18px;
 }
 .weather-other-details span{
-  font-size: 20px;
-  color:rgb(74, 48, 216)a
+  color:var(--seconary);
 }
 /* .weather-container{
   background-color: rgb(174, 222, 250);
@@ -243,4 +250,35 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 .error p{
   padding: 10px 100px;
   background-color: #E3867D;
+}
+footer{
+  padding: 25px;
+  text-align: center;
+  background-color: var(--primary);
+  /* color: #fff;  */
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: var(--seconary); */
+  width: 30%;
+  margin: 0 auto;
+}
+footer p a{
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.api-credit{
+font-size: 12px;
+letter-spacing: 1px!important;
+}
+@media only screen and (max-width: 600px) {
+  .search-container input{
+    width:200px; 
+    padding-left: 20px;  
+  }
+  .search-container button{
+    padding: 0px 15px;
+  }
 }
