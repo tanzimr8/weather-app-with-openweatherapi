@@ -5,6 +5,7 @@ const Search = ({search,setSearch,handleSearch}) => {
     <div className='search-container'>
         <input type="text"
         name='city'
+        required
         placeholder='Enter a city name'
         value={search}
         onChange={(e)=>{setSearch(e.target.value)}}
