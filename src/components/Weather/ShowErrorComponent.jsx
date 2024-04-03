@@ -2,7 +2,7 @@ import React from 'react'
 
 const ShowErrorComponent = ({error}) => {
   return (
-    <div className='error'>
+    <div className='position-center error'>
       <p>{error}</p>
     </div>
   )

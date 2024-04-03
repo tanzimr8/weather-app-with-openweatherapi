@@ -2,7 +2,7 @@ import React from 'react'
 
 const Search = ({search,setSearch,handleSearch}) => {
   return (
-    <div className='search-container'>
+    <div className='position-center search-container'>
         <input type="text"
         name='city'
         required

@@ -14,17 +14,17 @@ const Weather = ({weatherData}) => {
   }
   return (
     // whole container
-    <div className="weather-container">    
-      <div className="weather-location">  
+    <div className="position-center weather-container">    
+      <div className="weather-location weather-card">  
       {weatherData && weatherData.name && weatherData.sys && (
       <p className="location">{weatherData.name}, {weatherData.sys.country}</p>
       )}
         <p className="time">{getCurrentDate()}</p>
       </div>
-      <div className="weather-info">
+      <div className="position-center weather-card weather-info ">
         <div className="info-temperature">
             {weatherData &&weatherData.main.temp && (
-              <div className="temperature">
+              <div className="position-center temperature">
             <h3>{Math.floor(weatherData && weatherData.main.temp - 273)}&deg;C</h3>
             <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="" /></div>)}
           {weatherData && weatherData.main.temp_max && weatherData.main.temp_min && (<div className="temperature-minmax">
@@ -32,13 +32,13 @@ const Weather = ({weatherData}) => {
           </div>)}
           
         </div>
-        <div className="info-condition">
+        <div className="position-center info-condition">
           <p className='condition'>{weatherData && weatherData.weather[0].description && weatherData.weather[0].description}</p>
           <p className='realfeel'>Feels Like {weatherData && weatherData.main.feels_like && Math.floor(weatherData.main.feels_like - 273)}&deg;</p>
         </div>
       </div>
 
-      <div className="weather-other-details">
+      <div className="position-center weather-card weather-other-details ">
       <p> <span><SiStatuspal/></span> {weatherData && weatherData.weather[0].main}</p>
       <p><span><WiHumidity/> </span>{weatherData && weatherData.main.humidity}%</p>
       <p><span><FaWind/> </span>{weatherData && weatherData.wind.speed}KPH</p>
